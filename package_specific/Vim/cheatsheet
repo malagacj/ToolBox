@@ -1,0 +1,18 @@
+REGISTERS:
+  Copy to registers ie: "ay or "by
+  Copy line to registers ie: "ayy or "zyy
+  Paste from register ie: "ap or "bp or "zp
+
+INSERT:
+  * All commands are inside Insert Mode (i):
+
+  ctrl+r + a ie: Paste from register a
+  ctrl+r + b ie: Paste from register b
+  ctrl+r + . ie: Paste last insert, whatever it was
+  ctrl+a ie: Same as previous command, ctrl+r + .
+
+  Use ctrl+x for advanced insert options.
+  ctrl+x + ctrl+] (Tag Completion)
+  ctrl+x + ctrl+] (Tag Completion)
+
+norm # used to enter key commands to be executed

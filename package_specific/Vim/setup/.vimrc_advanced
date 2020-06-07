@@ -1,0 +1,22 @@
+"BASIC SETUP:
+
+" enter the current millenium
+set nocompatible
+
+"enable syntax
+syntax enable
+
+" enable plugins Necesary for custom ftplugin files to work!!
+filetype indent plugin on
+
+
+" FINDING FILES:
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete:
+set wildmenu
+
+" Enables yy, D and P to work with system clipboard
+set clipboard=unnamed
