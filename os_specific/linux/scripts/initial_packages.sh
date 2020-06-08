@@ -15,4 +15,6 @@ sudo apt-get install build-essential # Need for 'make' command
 package_specific/Latex/scripts/installation.sh
 
 # X11 package, needed by dwm
-#sudo apt install libx11-dev
+#sudo apt-get install libx11-dev
+#sudo apt-get install libxft-dev
+#sudo apt-get install libxinerama-dev
