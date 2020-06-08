@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd ../../../
+
 # Git
 sudo apt-get install git
 
@@ -10,8 +12,7 @@ sudo apt-get install python3-venv # To create virtualenvs
 sudo apt-get install build-essential # Need for 'make' command
 
 #Latex
-sudo apt-get install texlive-full
+package_specific/Latex/scripts/installation.sh
 
 # X11 package, needed by dwm
 #sudo apt install libx11-dev
-
