@@ -7,6 +7,7 @@
 uptime # time since computer booted up
 df -h # Disk Space Utilization
 du -sh /home # Space Utilization i.e /home
+sudo mkfs.ext4 /dev/sdg # Resets sdg to ext4
 ```
 
 ### TAR
