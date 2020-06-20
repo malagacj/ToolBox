@@ -2,7 +2,12 @@
 Many Python applications need psycopg2 to interact with PostgreSQL
 
 ## Prerequisites
-In order to install psycopg2 the postgresql-server-dev-X.Y package must be installed for compilation to complete succesfully
+Check Postgresql version
+```
+psql --version
+```
+
+In order to install psycopg2 the postgresql-server-dev-X.Y package must be installed for compilation to complete succesfully (Warning: Sometimes Y version is not required, check repository first)
 ```
 sudo apt-get install postgresql-server-dev-X.Y
 ```
