@@ -8,6 +8,9 @@ sudo apt-get install git
 # Python3
 sudo apt-get install python3-venv # To create virtualenvs
 
+# Vim
+sudo apt-get install vim
+
 # Build Essential (needed to use 'make' command)
 sudo apt-get install build-essential # Need for 'make' command
 
