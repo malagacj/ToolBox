@@ -21,3 +21,6 @@ package_specific/Latex/scripts/installation.sh
 #sudo apt-get install libx11-dev
 #sudo apt-get install libxft-dev
 #sudo apt-get install libxinerama-dev
+
+# XFCE
+#sudo apt-get install gvfs-backends
