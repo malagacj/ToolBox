@@ -13,5 +13,5 @@ sudo adduser <username>
 Use [script](os_specific/linux/scripts/initial_packages.sh) in this project
 
 ```bash
-os_specific/linux/scripts/initial_packages.sh
+/os_specific/linux/scripts/initial_packages.sh
 ```
