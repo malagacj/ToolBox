@@ -10,7 +10,7 @@ sudo adduser <username>
 ```
 
 ### Install server commom packages
-Use [script](os_specific/linux/scripts/initial_packages.sh) in this project
+Use [script](/os_specific/linux/scripts/initial_packages.sh) in this project
 
 ```bash
 /os_specific/linux/scripts/initial_packages.sh
