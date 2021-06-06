@@ -2,9 +2,9 @@
 
 ## Steps
 
-### Users
+### 1) Users
 #### Create user
-Login as a sudoer
+Login as a sudoer and create new user
 
 ```bash
 sudo adduser <username>
@@ -37,7 +37,7 @@ cat /tmp/id_rsa.jessica.pub >> ~/.ssh/authorized_keys
 
 
 
-### Install server commom packages
+### 2) Install server commom packages
 Use [script](/os_specific/linux/scripts/initial_packages.sh) in this project
 
 ```bash
