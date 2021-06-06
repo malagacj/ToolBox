@@ -27,6 +27,11 @@ dpkg -l # Returns all packages
 dpkg --print-architecture # Prints computer architecture
 ```
 
+### Users
+```
+sudo useradd <user>
+```
+
 ### TAR
 ```
 tar -xf <tarfile>
