@@ -9,6 +9,7 @@ sudo ufw default allow outgoing
 
 # Allow SSH connections and HTTPS
 sudo ufw allow ssh
+sudo ufw allow http
 sudo ufw allow https
 
 # Enabling UFW
