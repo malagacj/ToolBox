@@ -38,3 +38,10 @@ to Wayland
 ```
 echo $XDG_SESSION_TYPE # Display Server being used
 ```
+
+### Hardware
+```
+lspci
+lscpu
+sudo dmidecode -t 2 # To check Motherboard (check real purpose)
+```
