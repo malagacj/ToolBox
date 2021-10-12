@@ -24,6 +24,12 @@ du -sh /home # Space Utilization i.e /home
 sudo mkfs.ext4 /dev/sdg # Resets sdg to ext4
 
 dpkg -l # Returns all packages
+dpkg --print-architecture # Prints computer architecture
+```
+
+### Users
+```
+sudo useradd <user>
 ```
 
 ### TAR
