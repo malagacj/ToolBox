@@ -78,3 +78,34 @@ kubectl get replicationcontroller
 kubectl replace -f <replication-controller.yaml>
 kubectl scale -replicas=6 -f <<replication-controller.yaml>
 ```
+```
+
+
+## Deployment
+
+### Creating Deployment
+```
+kubectl create -f <deployment.yaml> --record
+```
+
+### Deleting Deployment
+```
+kubectl delete deployment <deployment_name>
+```
+
+### Deployment rollout
+```
+kubectl rollout status deployment/<deployment_name>
+kubectl rollout history deployment/<deployment_name>
+kubectl rollout undo deployment/<deployment_name>
+```
+
+### Updating Deployment
+```
+kubectl apply -f <deployment.yaml> --record
+kubectl edit deployment <deployment_name> --record
+kubectl set image deployment/<deployment_name> image-name=image-name:1.9.1 --record
+```
+
+## Notes
+--record is not mandatory, but it records "CHANGE/CAUSE". Flag will be deprecated
