@@ -108,3 +108,61 @@ kubectl set image deployment/<deployment_name> image-name=image-name:1.9.1 --rec
 
 ### Notes
 --record is not mandatory, but it records "CHANGE/CAUSE". Flag will be deprecated
+
+
+## Service
+### Background
+- NodePort: Used for external access to the Pods
+- ClusterIP: Used for internal communication between Pods
+- LoadBalancer: Balances load to each Node in the Cluster
+
+#### NodePort
+Rules in spec:
+- port: only this is required
+- targetPort : If not given, its value is asumed to be the same as port
+- nodePort: The valid range is 30000 - 32767. If not given, a value within the valid range is allocated.
+
+NodePort acts as a Load Balancer between the Pods using a random algorithm. A different Pod will usually the request
+
+If Pods are distributed accross several nodes, the service also expands accross all nodes. No additional configuration is required.
+
+#### ClusterIP
+It is the default type of Service. So if nothing is specified, ClusterIP will be the type of Service
+One use is for Microservices within the cluster
+
+#### LoadBalancer
+Only works on supported Cloud. It enables the native Load Balancer of that platform
+
+It replaces NodePort, as NodePort will use any of the IPs of its worker Nodes to grant services to the end user. NodePort will be applied if LoadBalancer is selected on an unsupported cluster
+
+Note:
+A VM could be created for Load Balancing purposes installing a suitable Load Balancer like Nginx or hrpoxy.
+
+
+
+### Creating Service
+```
+kubectl create -f <service.yaml>
+```
+
+### Getting Service and Service Url
+```
+kubectl get service # also services and svc work
+```
+
+Urls:
+If using minikube:
+```
+minikube service <service_name> --url
+```
+
+### Deleting Deployment
+```
+kubectl delete service <service_name>
+```
+
+### Updating Deployment
+```
+kubectl apply -f <service.yaml>
+kubectl edit service <service_name>
+```
