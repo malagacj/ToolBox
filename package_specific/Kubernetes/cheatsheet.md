@@ -166,3 +166,12 @@ kubectl delete service <service_name>
 kubectl apply -f <service.yaml>
 kubectl edit service <service_name>
 ```
+
+
+## Notes
+Use "." to create all files:
+
+```
+kubectl create -f .
+```
+Use [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/) to setup a Kubernetes cluster.
