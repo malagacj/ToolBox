@@ -78,7 +78,6 @@ kubectl get replicationcontroller
 kubectl replace -f <replication-controller.yaml>
 kubectl scale -replicas=6 -f <<replication-controller.yaml>
 ```
-```
 
 
 ## Deployment
@@ -107,5 +106,5 @@ kubectl edit deployment <deployment_name> --record
 kubectl set image deployment/<deployment_name> image-name=image-name:1.9.1 --record
 ```
 
-## Notes
+### Notes
 --record is not mandatory, but it records "CHANGE/CAUSE". Flag will be deprecated
