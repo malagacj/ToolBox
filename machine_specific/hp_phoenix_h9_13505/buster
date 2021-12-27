@@ -1,0 +1,19 @@
+Screen resolution may cause problems when showing UEFI/Grub/Debian Login
+ Try different screen resolutions
+
+## Install rt2860.bin
+Try adding 'non-free' to sources.list:
+	deb http://deb.debian.org/debian/ buster main non-free
+	deb-src http://deb.debian.org/debian/ buster main non-free
+and run:
+	sudo apt-get update; sudo apt-get upgrade;
+	sudo apt-get install firmware-misc-nonfree
+
+It may give you the following error: 
+	Possible missing firmware /lib/firmware/nvidia/gv100/acr/ucode_load.bin for module nouveau
+
+Try adding to sources.list:
+	deb http://deb.debian.org/debian/ buster-backports non-free
+	deb-src http://deb.debian.org/debian/ buster-backports non-free
+and run:
+	sudo apt-get install -t buster-backports firmware-misc-nonfree
