@@ -11,3 +11,5 @@ The purpose of this guide is to provide specific guidelines for installing Debia
 The installation details are specified [here](./debian_live.md).
 
 ## Post-installation
+* [Non-free packages (rt2860.bin)](./non-free.md)
+* [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-debian)
