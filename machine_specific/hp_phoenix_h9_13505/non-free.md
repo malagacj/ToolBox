@@ -11,6 +11,6 @@ deb-src http://deb.debian.org/debian/ buster main non-free
 
 ## Installation
 ```bash
-sudo apt-get update; sudo apt-get upgrade
-sudo apt-get install firmware-misc-nonfree
+sudo apt update; sudo apt upgrade
+sudo apt install firmware-misc-nonfree
 ```
