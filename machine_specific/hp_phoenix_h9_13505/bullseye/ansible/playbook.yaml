@@ -10,6 +10,7 @@
         update_cache: yes
         cache_valid_time: 86400 #One day
 
+# https://wiki.debian.org/VirtualBox#Debian_10_.22Buster.22_and_Debian_11_.22Bullseye.22
 -
   name: Fasttrack
   hosts: localhost
