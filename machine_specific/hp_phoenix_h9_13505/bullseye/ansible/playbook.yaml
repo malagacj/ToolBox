@@ -1,0 +1,50 @@
+-
+  name: Initial Machine Update and Upgrade
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update and upgrade apt packages
+      apt:
+        name: "*"
+        state: latest
+        update_cache: yes
+        cache_valid_time: 86400 #One day
+
+-
+  name: Fasttrack
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Fasttrack for Virtualbox
+      apt:
+        name: fasttrack-archive-keyring
+        state: present
+    - name: Add line to fasttrack.list
+      lineinfile:
+        path: /etc/apt/sources.list.d/fasttrack.list
+        line: deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-fasttrack main contrib
+        create: yes
+    - name: Add line to fasttrack.list
+      lineinfile:
+        path: /etc/apt/sources.list.d/fasttrack.list
+        line: deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-backports-staging main contrib
+        create: yes
+    - name: Update and upgrade apt packages
+      apt:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+-
+  name: Dependencies
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install all required dependecies
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - virtualbox
+        - vim
+        - git
