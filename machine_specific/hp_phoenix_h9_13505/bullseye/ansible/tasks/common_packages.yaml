@@ -1,0 +1,7 @@
+- name: Install all required dependecies
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - vim
+    - git

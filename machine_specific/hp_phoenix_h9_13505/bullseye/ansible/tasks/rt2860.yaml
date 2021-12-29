@@ -1,0 +1,19 @@
+# RT2860.bin for wireless card
+# https://packages.debian.org/bullseye/firmware-misc-nonfree
+- name: Add deb "non-free" to non-free.list
+  lineinfile:
+    path: /etc/apt/sources.list.d/non-free.list
+    line: deb http://deb.debian.org/debian/ bullseye non-free
+    create: yes
+- name: Add deb-src "non-free" to non-free.list
+  lineinfile:
+    path: /etc/apt/sources.list.d/non-free.list
+    line: deb-src http://deb.debian.org/debian/ bullseye non-free
+    create: yes
+- name: Apt Update
+  apt:
+    update_cache: yes
+- name: Install firmware-misc-nonfree
+  apt:
+    name: firmware-misc-nonfree
+    state: present

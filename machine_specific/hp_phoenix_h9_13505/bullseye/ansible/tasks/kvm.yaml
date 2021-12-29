@@ -1,0 +1,9 @@
+- name: Install qemu, libvirt and virtual-manager
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - qemu-system
+    - libvirt-clients
+    - libvirt-daemon-system
+    - virt-manager

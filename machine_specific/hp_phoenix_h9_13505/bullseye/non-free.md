@@ -5,12 +5,12 @@ This guide will show you how to add non-free debian resources and how to install
 
 Create /etc/apt/sources.list.d/non-free.list and add the following lines:
 ```bash
-deb http://deb.debian.org/debian/ buster main non-free
-deb-src http://deb.debian.org/debian/ buster main non-free
+deb http://deb.debian.org/debian/ bullseye non-free
+deb-src http://deb.debian.org/debian/ bullseye non-free
 ```
 
 ## Installation
 ```bash
-sudo apt update; sudo apt upgrade
+sudo apt update
 sudo apt install firmware-misc-nonfree
 ```
