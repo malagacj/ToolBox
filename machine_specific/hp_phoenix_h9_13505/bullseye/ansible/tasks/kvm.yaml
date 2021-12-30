@@ -1,3 +1,4 @@
+# https://wiki.debian.org/KVM
 - name: Install qemu, libvirt and virtual-manager
   apt:
     name: "{{ item }}"
