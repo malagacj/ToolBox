@@ -6,4 +6,5 @@
     - include_tasks: tasks/update_upgrade.yaml
     - include_tasks: tasks/rt2860.yaml
     - include_tasks: tasks/common_packages.yaml
-    - include_tasks: tasks/kvm.yaml
+    - include_tasks: tasks/virtualbox.yaml
+#    - include_tasks: tasks/kvm.yaml # Need to learn Bridged connection
