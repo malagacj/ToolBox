@@ -1,0 +1,8 @@
+-
+  name: Initial Machine Set up
+  hosts: localhost
+  become: yes
+  tasks:
+    - include_tasks: tasks/update_upgrade.yaml
+    - include_tasks: tasks/common_packages.yaml
+    - include_tasks: tasks/postgres.yaml

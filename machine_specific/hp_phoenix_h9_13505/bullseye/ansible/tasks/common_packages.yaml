@@ -5,3 +5,5 @@
   loop:
     - vim
     - git
+    - rsync
+    - python3-venv
