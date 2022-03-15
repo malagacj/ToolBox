@@ -50,3 +50,4 @@ sudo slappasswd
 ## Resources
 * [Marc Venteo](https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s)
 * [Digital ocean configuration](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04)
+* [Active Directory Explanation](https://www.youtube.com/watch?v=lFwek_OuYZ8)
