@@ -23,7 +23,7 @@ Like the sample files provided (ou.ldif, group.ldif, user.ldif)
 sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
 ```
 
-1) ![Step 01](./ldap_01.png)
+1) ![Step 01](images/ldap_01.png)
 2) ![Step 02](./ldap_02.png)
 3) ![Step 03](./ldap_03.png)
 4) ![Step 04](./ldap_04.png)
