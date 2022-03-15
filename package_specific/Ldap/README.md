@@ -15,14 +15,6 @@ sudo dpkg-reconfigure slapd
 ```
 Configure slapd by folowing "Mark Vendeo's video" or "Digital Ocean configuration"
 
-## Common commands
-### Adding Directory
-Add directories defined in the .ldif files.
-Like the sample files provided (ou.ldif, group.ldif, user.ldif)
-```bash
-sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
-```
-
 1) ![Step 01](images/ldap_01.png)
 2) ![Step 02](images/ldap_02.png)
 3) ![Step 03](images/ldap_03.png)
@@ -31,6 +23,13 @@ sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
 6) ![Step 06](images/ldap_06.png)
 7) ![Step 07](images/ldap_07.png)
 
+## Common commands
+### Adding Directory
+Add directories defined in the .ldif files.
+Like the sample files provided (ou.ldif, group.ldif, user.ldif)
+```bash
+sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
+```
 
 ## Resources
 * [Marc Venteo](https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s)
