@@ -13,7 +13,7 @@ Install slapd with any password, it will be change later on with "dpkg-reconfigu
 ```bash
 sudo dpkg-reconfigure slapd
 ```
-Configure slapd by folowing "Mark Vendeo's video" or "Digital Ocean configuration"
+Configure slapd by following "[Mark Vendeo]'s video" or "Digital Ocean configuration"
 
 1) ![Step 01](images/ldap_01.png)
 2) ![Step 02](images/ldap_02.png)
@@ -48,6 +48,10 @@ sudo slappasswd
 
 
 ## Resources
-* [Marc Venteo](https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s)
-* [Digital ocean configuration](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04)
-* [Active Directory Explanation](https://www.youtube.com/watch?v=lFwek_OuYZ8)
+* [Marc Venteo]
+* [Digital ocean configuration]
+* [Active Directory Explanation]
+
+[Marc Venteo]: https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s
+[Digital ocean configuration]: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04
+[Active Directory Explanation]: https://www.youtube.com/watch?v=lFwek_OuYZ8
