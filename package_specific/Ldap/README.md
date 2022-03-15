@@ -13,7 +13,7 @@ Install slapd with any password, it will be change later on with "dpkg-reconfigu
 ```bash
 sudo dpkg-reconfigure slapd
 ```
-Configure slapd by following "[Mark Vendeo]'s video" or "Digital Ocean configuration"
+Configure slapd by following "[Mark Venteo]'s video" or "Digital Ocean configuration"
 
 1) ![Step 01](images/ldap_01.png)
 2) ![Step 02](images/ldap_02.png)
