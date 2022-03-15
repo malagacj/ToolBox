@@ -1,0 +1,5 @@
+dn: cn=avengers,ou=marvel,dc=froylan,dc=ml
+objectClass: top
+objectClass: posixGroup
+gidNumber: 2000
+cn: avengers

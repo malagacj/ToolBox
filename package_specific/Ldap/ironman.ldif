@@ -1,0 +1,15 @@
+dn: uid=ironman,ou=marvel,dc=froylan,dc=ml
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: person
+cn: ironman
+uid: ironman
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /home/ironman
+loginShell: /bin/bash
+userPassword: {SSHA}U3JiptECYoC0UbU7fwvqea4YmvID0cJR
+sn: Stark
+mail: ironman@marvel.com
+givenName: ironman

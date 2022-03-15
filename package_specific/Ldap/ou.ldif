@@ -1,0 +1,4 @@
+dn: ou=marvel,dc=froylan,dc=ml
+objectClass: top
+objectClass: organizationalUnit
+ou: marvel
