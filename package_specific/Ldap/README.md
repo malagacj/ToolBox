@@ -24,12 +24,12 @@ sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
 ```
 
 1) ![Step 01](images/ldap_01.png)
-2) ![Step 02](./ldap_02.png)
-3) ![Step 03](./ldap_03.png)
-4) ![Step 04](./ldap_04.png)
-5) ![Step 05](./ldap_05.png)
-6) ![Step 06](./ldap_06.png)
-7) ![Step 07](./ldap_07.png)
+2) ![Step 02](images/ldap_02.png)
+3) ![Step 03](images/ldap_03.png)
+4) ![Step 04](images/ldap_04.png)
+5) ![Step 05](images/ldap_05.png)
+6) ![Step 06](images/ldap_06.png)
+7) ![Step 07](images/ldap_07.png)
 
 
 ## Resources
