@@ -20,15 +20,19 @@ sudo dpkg-reconfigure slapd
 Configure slapd by following "[Marc Venteo]'s video" or "Digital Ocean configuration". A brief summary is described next:
 
 1. Omit LDAP Server configuration\
-![Step 01](images/ldap_01.png)
+   ![Step 01](images/ldap_01.png)
 1. DNS Domain Name\
-![Step 02](images/ldap_02.png)
+   ![Step 02](images/ldap_02.png)
 1. Organization Name\
-![Step 03](images/ldap_03.png)
-1. ![Step 04](images/ldap_04.png)
-1. ![Step 05](images/ldap_05.png)
-1. ![Step 06](images/ldap_06.png)
-1. ![Step 07](images/ldap_07.png)
+   ![Step 03](images/ldap_03.png)
+1. Administrator password\
+   ![Step 04](images/ldap_04.png)
+1. Confirm administrator password\
+   ![Step 05](images/ldap_05.png)
+1. Remove database\
+   ![Step 06](images/ldap_06.png)
+1. Move old database\
+   ![Step 07](images/ldap_07.png)
 
 
 ## Common commands
