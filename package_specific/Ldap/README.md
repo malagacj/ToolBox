@@ -1,6 +1,7 @@
 # LDAP
 
-LDAP is used to centralice user accounts, information and configurations. It is multiplatform. More information in the following [link][1]
+LDAP is used to centralice user accounts, information and configurations. It is multiplatform.\
+More information in the following [link][1]\
 This is guide will help you to set up LDAP asap. For a more complete server configuration use [Digital ocean configuration]'s guide
 
 ## Prerequistes
