@@ -1,17 +1,18 @@
 # LDAP
 
 LDAP is used to centralice user accounts, information and configurations. It is multiplatform. More information in the following [link][1]
+This is guide will help you to set up LDAP asap. For a more complete server configuration use [Digital ocean configuration]'s guide
 
 ## Prerequistes
-
 ### Debian 11 (Bullseye)
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install slapd ldap-utils
 ```
-
 Install slapd with any password, it will be change later on with "dpkg-reconfigure"
 
+
+## Configuration
 ```bash
 sudo dpkg-reconfigure slapd
 ```
