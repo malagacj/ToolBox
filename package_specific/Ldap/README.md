@@ -43,21 +43,21 @@ Some sample files have been provided in the "samples" folder to add "Organizatio
 #### Adding Organizational Units
 Use the following command to add the organizational unit defined in samples/ou.ldif
 ```bash
-sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/ou.ldif
+sudo ldapadd -x -D cn=admin,dc=example,dc=com -W -f samples/ou.ldif
 ```
 The dn and ou keys should be modified to appropriate values
 
 #### Adding Groups
 Use the following command to add the groups defined in samples/group.ldif
 ```bash
-sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/group.ldif
+sudo ldapadd -x -D cn=admin,dc=example,dc=com -W -f samples/group.ldif
 ```
 The dn, gidNumber and cn keys should be modified to appropriate values
 
 #### Adding Users
 Use the following command to add the users defined in samples/user.ldif
 ```bash
-sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/user.ldif
+sudo ldapadd -x -D cn=admin,dc=example,dc=com -W -f samples/user.ldif
 ```
 The dn, cn, uid, uidNumber, gidNumber, homeDirectory, userPassword, sn, mail and givenName keys should be modified to appropriate values
 
@@ -74,14 +74,14 @@ sudo slapcat
 ```
 
 ## Notes
-
+All of the resources proviced below are good guides for learning Ldap! I would start watching and reading them in the order they are provided
 
 
 ## Resources
+* [ComandanteJ's playlist]
 * [Marc Venteo's LDAP]
 * [Digital ocean configuration]
 * [Eli the Computer Guy's AD explanation]
-* [ComandanteJ's playlist]
 
 [Marc Venteo's LDAP]: https://www.youtube.com/watch?v=6HkIDr3QF8Y
 [Digital ocean configuration]: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04
