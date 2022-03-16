@@ -1,7 +1,7 @@
 # LDAP
 
 LDAP is used to centralice user accounts, information and configurations. It is multiplatform.\
-More information in the following [link][1]\
+More information in the following [link][ComandanteJ LDAP Explanation]\
 This is guide will help you to set up LDAP asap. For a more complete server configuration use [Digital ocean configuration]'s guide
 
 ## Prerequistes
@@ -17,7 +17,7 @@ Install slapd with any password, it will be change later on with "dpkg-reconfigu
 ```bash
 sudo dpkg-reconfigure slapd
 ```
-Configure slapd by following "[Marc Venteo]'s video" or "Digital Ocean configuration". A brief summary is described next:
+Configure slapd by following "[Marc Venteo's LDAP]'s video" or "[Digital Ocean configuration]". A brief summary is described next:
 
 1. Omit LDAP Server configuration\
    ![Step 01](images/ldap_01.png)
@@ -36,34 +36,55 @@ Configure slapd by following "[Marc Venteo]'s video" or "Digital Ocean configura
 
 
 ## Common commands
-### Adding Directory
-Add directories defined in the .ldif files.
-Like the sample files provided (ou.ldif, group.ldif, user.ldif)
+Some sample files have been provided in the "samples" folder to add "Organizational Units", "Groups" and "Users"
+
+### Adding Directories
+
+#### Adding Organizational Units
+Use the following command to add the organizational unit defined in samples/ou.ldif
 ```bash
-sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f ou.ldif
+sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/ou.ldif
+```
+The dn and ou keys should be modified to appropriate values
+
+#### Adding Groups
+Use the following command to add the groups defined in samples/group.ldif
+```bash
+sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/group.ldif
+```
+The dn, gidNumber and cn keys should be modified to appropriate values
+
+#### Adding Users
+Use the following command to add the users defined in samples/user.ldif
+```bash
+sudo ldapadd -x -D cn=admin,dc=froylan,dc=ml -W -f samples/user.ldif
+```
+The dn, cn, uid, uidNumber, gidNumber, homeDirectory, userPassword, sn, mail and givenName keys should be modified to appropriate values
+
+The userPassword encrypted value should be defined using "slappasswd". In the samples/user.ldif "marvel" was uses as the password
+```bash
+sudo slappasswd
 ```
 
-The password to be used for Ldap is the one created during the dpkg-reconfigure step
-
-Use slapcat to verify the objectas that have been created
+#### Verify objects
+Use slapcat to verify the objects that have been created
 
 ```bash
 sudo slapcat
 ```
 
-For user's passwords use (psswd=marvel)
+## Notes
 
-```bash
-sudo slappasswd
-```
 
 
 ## Resources
-* [Marc Venteo]
+* [Marc Venteo's LDAP]
 * [Digital ocean configuration]
-* [Active Directory Explanation]
+* [Eli the Computer Guy's AD explanation]
+* [ComandanteJ's playlist]
 
-[1]: https://www.youtube.com/watch?v=zpXDMlXwW_I&list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk&index=1
-[Marc Venteo]: https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s
+[Marc Venteo's LDAP]: https://www.youtube.com/watch?v=6HkIDr3QF8Y
 [Digital ocean configuration]: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04
-[Active Directory Explanation]: https://www.youtube.com/watch?v=lFwek_OuYZ8
+[Eli the Computer Guy's AD explanation]: https://www.youtube.com/watch?v=lFwek_OuYZ8
+[ComandanteJ's playlist]: https://www.youtube.com/playlist?list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk
+[ComandanteJ LDAP explanation]: https://www.youtube.com/watch?v=zpXDMlXwW_I&list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk&index=1
