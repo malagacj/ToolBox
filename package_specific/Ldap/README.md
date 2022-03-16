@@ -1,5 +1,7 @@
 # LDAP
 
+LDAP is used to centralice user accounts, information and configurations. It is multiplatform. More information in the following link [1]
+
 ## Prerequistes
 
 ### Debian 11 (Bullseye)
@@ -52,6 +54,7 @@ sudo slappasswd
 * [Digital ocean configuration]
 * [Active Directory Explanation]
 
+[1]: https://www.youtube.com/watch?v=zpXDMlXwW_I&list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk&index=1
 [Marc Venteo]: https://www.youtube.com/watch?v=6HkIDr3QF8Y&t=573s
 [Digital ocean configuration]: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04
 [Active Directory Explanation]: https://www.youtube.com/watch?v=lFwek_OuYZ8
