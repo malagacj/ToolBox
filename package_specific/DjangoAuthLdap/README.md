@@ -5,8 +5,8 @@ Django-auth-ldap package allows django projects to make use of Ldap users and gr
 Django-auth-ldap needs to compile against each OS when it is installed. This guide will provide a list of prerequisites to be installed on each OS previous to django-auth-ldap installation
 
 ## OS specific prerequisites
-* Debian 11 (Buster)
-* Alpine
+* [Debian 11 (Buster)]
+* [Alpine]
 
 ## Django Config
 The following configurations should be included in the settings.py
