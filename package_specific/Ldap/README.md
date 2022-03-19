@@ -61,7 +61,7 @@ sudo ldapadd -x -D cn=admin,dc=example,dc=com -W -f samples/user.ldif
 ```
 The dn, cn, uid, uidNumber, gidNumber, homeDirectory, userPassword, sn, mail and givenName keys should be modified to appropriate values
 
-The userPassword encrypted value should be defined using "slappasswd". In the samples/user.ldif "marvel" was uses as the password
+The userPassword encrypted value should be defined using "slappasswd". In the samples/user.ldif "marvel" was used as the password
 ```bash
 sudo slappasswd
 ```

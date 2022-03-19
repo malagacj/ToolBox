@@ -1,4 +1,4 @@
-dn: uid=ironman,ou=marvel,dc=froylan,dc=ml
+dn: uid=ironman,ou=marvel,dc=example,dc=com
 objectClass: top
 objectClass: posixAccount
 objectClass: inetOrgPerson
