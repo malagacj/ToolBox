@@ -8,7 +8,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-AUTH_LDAP_SERVER_URI = "ldap://192.168.0.28"
+AUTH_LDAP_SERVER_URI = "ldap://192.168.1.149"
 
 
 AUTH_LDAP_BIND_DN = "cn=admin,dc=example,dc=com"
@@ -24,8 +24,7 @@ AUTH_LDAP_GROUP_TYPE = PosixGroupType()
  
  
 AUTH_LDAP_USER_FLAGS_BY_GROUP = {
-    "is_active": "cn=dx,ou=marvel,dc=example,dc=com",
-    "is_staff": "cn=dx,ou=marvel,dc=example,dc=com",
-    "is_superuser": "cn=dx,ou=marvel,dc=example,dc=com",
- }
- 
+    "is_active": "cn=avengers,ou=marvel,dc=example,dc=com",
+    "is_staff": "cn=avengers,ou=marvel,dc=example,dc=com",
+    "is_superuser": "cn=avengers,ou=marvel,dc=example,dc=com",
+}
