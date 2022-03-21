@@ -82,6 +82,7 @@ All of the resources proviced below are good guides for learning Ldap! I would s
 * [Marc Venteo's LDAP]
 * [Digital ocean configuration]
 * [Eli the Computer Guy's AD explanation]
+* [Official OpenLdap]
 
 [Marc Venteo's LDAP]: https://www.youtube.com/watch?v=6HkIDr3QF8Y
 [Digital ocean configuration]: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04
