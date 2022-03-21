@@ -9,7 +9,7 @@ Django-auth-ldap needs to compile against each OS when it is installed. This gui
 * [Alpine]
 
 ## Django Config
-A sample django configuration file "ldap.py" has been provided
+A sample django configuration file [ldap.py] has been provided
 ```python
 import ldap
 from django_auth_ldap.config import LDAPSearch, PosixGroupType
@@ -45,3 +45,4 @@ AUTH_LDAP_USER_FLAGS_BY_GROUP = {
 
 [Debian 11 (Buster)]: debian11_buster.md
 [Alpine]: alpine.md
+[ldap.py]: ldap.py
