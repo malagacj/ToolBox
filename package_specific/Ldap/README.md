@@ -88,3 +88,4 @@ All of the resources proviced below are good guides for learning Ldap! I would s
 [Eli the Computer Guy's AD explanation]: https://www.youtube.com/watch?v=lFwek_OuYZ8
 [ComandanteJ's playlist]: https://www.youtube.com/playlist?list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk
 [ComandanteJ LDAP explanation]: https://www.youtube.com/watch?v=zpXDMlXwW_I&list=PLw0uO9wnBmUmTOWbqvTudjJEjQFV5diTk&index=1
+[Official OpenLdap]: https://www.openldap.org
