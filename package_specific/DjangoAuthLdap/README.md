@@ -8,7 +8,7 @@ To set up a small Ldap Server have a look at the [Ldap Guide]
 
 ## OS specific prerequisites
 * [Debian 11 (Buster)]
-* [Alpine]
+* [Alpine (Docker)]
 
 ## Django Config
 A sample django configuration file [ldap.py] has been provided
@@ -46,6 +46,6 @@ AUTH_LDAP_USER_FLAGS_BY_GROUP = {
 ```
 
 [Debian 11 (Buster)]: debian11_buster.md
-[Alpine]: alpine.md
+[Alpine (Docker)]: alpine_docker.md
 [ldap.py]: ldap.py
 [Ldap Guide]: /package_specific/Ldap
