@@ -7,8 +7,8 @@ Django-auth-ldap needs to compile against each OS when it is installed. This gui
 To set up a small Ldap Server have a look at the [Ldap Guide]
 
 ## OS specific prerequisites
-* [Debian 11 (Buster)]
-* [Alpine (Docker)]
+* [Debian]
+* [Alpine]
 
 ## Django Config
 A sample django configuration file [ldap.py] has been provided
@@ -45,7 +45,7 @@ AUTH_LDAP_USER_FLAGS_BY_GROUP = {
  
 ```
 
-[Debian 11 (Buster)]: debian11_buster.md
-[Alpine (Docker)]: alpine_docker.md
+[Debian]: Debian
+[Alpine]: Alpine
 [ldap.py]: ldap.py
 [Ldap Guide]: /package_specific/Ldap

@@ -1,5 +1,6 @@
-# Debian 11 (Buster)
+# Debian
 
+## Debian 11 (Buster)
 These are the more generic packages to be installed
 ```bash
 sudo apt update
@@ -15,6 +16,6 @@ sudo apt install libldap2-dev
 sudo apt install libsasl2-dev
 ```
 
+### References
 [libldap2-dev]: https://packages.debian.org/cgi-bin/search_contents.pl?word=lber.h&searchmode=searchfiles&case=insensitive&version=stable&arch=i386
 [libsasl2-dev]: https://manpages.debian.org/buster/libsasl2-dev/sasl_server_new.3.en.html
-
