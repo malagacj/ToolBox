@@ -1,0 +1,25 @@
+# syntax=docker/dockerfile:1
+FROM python:3.10-alpine3.15
+
+ENV PYTHONUNBUFFERED=1
+
+# LDAP workaround for Alpine
+# https://stackoverflow.com/questions/70182720/python-ldap-3-4-installation-fails-on-alpine-images
+RUN echo -n "INPUT ( libldap.so )" > /usr/lib/libldap_r.so
+
+RUN python3 -m venv /opt/env && /opt/env/bin/pip install -U pip setuptools
+
+WORKDIR /site
+COPY requirements.txt /site/
+
+# https://stackoverflow.com/questions/46221063/what-is-build-deps-for-apk-add-virtual-command
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev python3-dev && apk add --no-cache openldap-dev && /opt/env/bin/pip install --no-cache -r requirements.txt && apk del .build-deps
+
+COPY . /site/
+
+RUN /opt/env/bin/python manage.py makemigrations
+RUN /opt/env/bin/python manage.py migrate
+ 
+EXPOSE 8000
+ 
+CMD ["/opt/env/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
