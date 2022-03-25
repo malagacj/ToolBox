@@ -1,13 +1,9 @@
 # WDMyCloud
 
 ## Mounting Shares
+Use the [Mounting Guide] with:
+* WIN_SHARE_IP_DNS=WDMyCloud.local
+* share_name, path_to_folder, username and password should be provided accordingly
 
-Use the following command to get the password prompted
-```bash
-sudo mount -t cifs '//WDMyCloud.local/<share_name>' /path/to/mount_folder -o user,ro,noauto,username=<username>
-```
-
-Or you can include the password for direct mounting
-```bash
-sudo mount -t cifs '//WDMyCloud.local/<share_name>' /path/to/mount_folder -o user,ro,noauto,username=<username>,password=<password>
-```
+## References
+[Mounting Guide]: /home/froylan/malagacj/github/ToolBox/use_cases/mounting.md
