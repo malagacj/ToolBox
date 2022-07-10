@@ -1,0 +1,12 @@
+server {
+    server_name <DOMAIN_NAME_OF_THIS_SERVER>;
+
+    # Addition authentication properties
+    # auth_basic "Protected Area";
+    # auth_basic_user_file /etc/nginx/.htpasswd;
+
+    location /metrics {
+        proxy_pass    http://localhost:9090/;
+    }
+
+}

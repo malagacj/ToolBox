@@ -1,0 +1,10 @@
+server {
+    server_name <DOMAIN_NAME_OF_THIS_SERVER>;
+
+    location /metrics {
+        allow <REMOTE_IP_ALLOWED_TO_ACCESS_ENDPOINT>;
+        deny all;
+        proxy_pass    http://localhost:9100/metrics;
+    }
+
+}
