@@ -1,4 +1,5 @@
 #!/bin/bash
+# https://openbuilds.com/threads/libappindicator3-1.18899/
 
 # Getting Slack and Prerequisites
 wget http://ftp.us.debian.org/debian/pool/main/libi/libindicator/libindicator3-7_0.5.0-4_amd64.deb
