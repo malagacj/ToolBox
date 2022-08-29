@@ -6,7 +6,7 @@ apt install ffmpeg
 ```
 
 ## Prerequisites
-Login in Deian Xorg
+Login in to Debian Xorg
 
 ## Sample commands
 ### Record simple video
