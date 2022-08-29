@@ -41,3 +41,7 @@ ffmpeg -i input_file.mkv -codec copy output_file.mp4
 ```bash
 ffmpeg -ss 00:00:05 -i out.mp4 -c:v libx264 -crf 18 -to 00:10:00 -c:a copy output.mp4
 ```
+
+## Resources
+* https://www.youtube.com/watch?v=HO6oU5oT6uU
+* https://superuser.com/questions/1222801/black-frames-at-beginning-of-video-file-when-file-cut
