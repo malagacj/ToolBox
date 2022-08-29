@@ -32,3 +32,8 @@ Use device 0 as the audio input device "hw:0"
 ```
 ffmpeg -f x11grab -i :0.0 -f alsa -i hw:0 out.mkv
 ```
+
+### Convert video format
+```
+ffmpeg -i input_file.mkv -codec copy output_file.mp4
+```
