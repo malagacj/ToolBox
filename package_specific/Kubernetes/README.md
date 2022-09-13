@@ -11,7 +11,7 @@ kubectl run <podname> --image=<imagename>
 #### file.yaml
 ##### Creating sample yaml file
 ```bash
-kubectl run <pod_name> --image=<container_image> --dry-run=client -o yaml > pod_name.yaml
+kubectl run <pod_name> --image=<container_image> --dry-run=client -o yaml > file.yaml
 ```
 ##### Creating POD
 ```bash
