@@ -4,12 +4,17 @@
 
 ### Creating pods
 #### CLI
-```
+```bash
 kubectl run <podname> --image=<imagename>
 ```
 
 #### file.yaml
+##### Creating sample yaml file
+```bash
+kubectl run <pod_name> --image=<container_image> --dry-run=client -o yaml > file.yaml
 ```
+##### Creating POD
+```bash
 kubectl apply -f <file.yaml>
 
 or
@@ -18,12 +23,12 @@ kubectl create -f file.yaml
 ```
 
 ### Deleting pods
-```
+```bash
 kubectl delete pod <podname>
 ```
 
 ### Pods Description
-```
+```bash
 kubectl get pods
 kubectl describe pod <podname>
 kubectl get pods -o wide
@@ -33,22 +38,22 @@ kubectl get pods -o wide
 ## ReplicaSets
 
 ### Creating Replicasets
-```
+```bash
 kubectl create -f <replicaset-definition.yaml>
 ```
 
 ### Deleting ReplicaSets
-```
+```bash
 kubectl delete replicaset <replicaset_name>
 ```
 
 ### ReplicaSets Description
-```
+```bash
 kubectl get replicaset
 ```
 
 ### Updating ReplicaSets
-```
+```bash
 kubectl replace -f <replicaset-definition.yaml>
 kubectl scale -replicas=6 -f <replicaset-definition.yaml>
 kubectl edit replicaset <replicaset_name> # To edit replicaset Live
@@ -59,22 +64,22 @@ kubectl scale replicaset myapp-rs --replicas=2 # Another way to scale a ReplicaS
 ## Replication Controller (old)
 
 ### Creating Replication Controller
-```
+```bash
 kubectl create -f <replication-controller.yaml>
 ```
 
 ### Deleting Replication Controllers
-```
+```bash
 kubectl delete replicationcontroller <replication_controller_name>
 ```
 
 ### Replication Controllers Description
-```
+```bash
 kubectl get replicationcontroller
 ```
 
 ### Updating Replication Controllers
-```
+```bash
 kubectl replace -f <replication-controller.yaml>
 kubectl scale -replicas=6 -f <<replication-controller.yaml>
 ```
@@ -83,24 +88,24 @@ kubectl scale -replicas=6 -f <<replication-controller.yaml>
 ## Deployment
 
 ### Creating Deployment
-```
+```bash
 kubectl create -f <deployment.yaml> --record
 ```
 
 ### Deleting Deployment
-```
+```bash
 kubectl delete deployment <deployment_name>
 ```
 
 ### Deployment rollout
-```
+```bash
 kubectl rollout status deployment/<deployment_name>
 kubectl rollout history deployment/<deployment_name>
 kubectl rollout undo deployment/<deployment_name>
 ```
 
 ### Updating Deployment
-```
+```bash
 kubectl apply -f <deployment.yaml> --record
 kubectl edit deployment <deployment_name> --record
 kubectl set image deployment/<deployment_name> image-name=image-name:1.9.1 --record
@@ -141,28 +146,28 @@ A VM could be created for Load Balancing purposes installing a suitable Load Bal
 
 
 ### Creating Service
-```
+```bash
 kubectl create -f <service.yaml>
 ```
 
 ### Getting Service and Service Url
-```
+```bash
 kubectl get service # also services and svc work
 ```
 
 Urls:
 If using minikube:
-```
+```bash
 minikube service <service_name> --url
 ```
 
 ### Deleting Deployment
-```
+```bash
 kubectl delete service <service_name>
 ```
 
 ### Updating Deployment
-```
+```bash
 kubectl apply -f <service.yaml>
 kubectl edit service <service_name>
 ```
@@ -171,7 +176,7 @@ kubectl edit service <service_name>
 ## Notes
 Use "." to create all files:
 
-```
+```bash
 kubectl create -f .
 ```
 Use [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/) to setup a Kubernetes cluster.

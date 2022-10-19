@@ -8,9 +8,9 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
 # Allow SSH connections and HTTPS
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
+sudo ufw allow ssh # 22
+sudo ufw allow http # 80
+sudo ufw allow https # 443
 
 # Enabling UFW
 sudo ufw enable
