@@ -10,7 +10,7 @@
 
 ### 9 PromQL Example Queries
 
-In the Graph Section of Prometheus GUI make a call to a query, for example
+In the Graph Section of Prometheus GUI make a call to a query, for example:
 ![scrape_duration_seconds](lesson_09_01.png)
 
 
