@@ -1,3 +1,5 @@
 # Todo
 
-- [ ] restart_project should only create env when cloning django repository
+## restart_project commmand
+- [ ] Should only create env when cloning django repository
+- [ ] Should not create parent directory with same name as repository
