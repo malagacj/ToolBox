@@ -12,7 +12,7 @@ sudo bash -c 'echo "192.168.1.165	k8s-node02" >> /etc/hosts'
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
-# Install and setup UFW
+## Install and setup UFW
 sudo apt install ufw -y
 
 # Set UFW defaults
