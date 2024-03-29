@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define "influxdb" do |influxdb|
+    influxdb.vm.box = "generic/debian12"
+    influxdb.vm.provision :"shell", path: "influxdb.sh"
+  end
+
+  config.vm.define "telegraf" do |telegraf|
+    telegraf.vm.box = "generic/debian12"
+    telegraf.vm.provision :"shell", path: "telegraf.sh"
+  end
+
+  config.vm.network "private_network", type: "dhcp"
+end
+
